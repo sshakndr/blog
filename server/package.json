@@ -1,0 +1,30 @@
+{
+  "name": "rip",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/index.js",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon --ignore meta.json -q dist/index.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.14",
+    "@types/express-fileupload": "^1.4.1",
+    "@types/jsonwebtoken": "^8.5.9",
+    "@types/node": "^18.8.5",
+    "@types/pg": "^8.6.5",
+    "concurrently": "^7.4.0",
+    "nodemon": "^2.0.20",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.8.0"
+  }
+}
