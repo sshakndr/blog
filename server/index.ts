@@ -20,6 +20,9 @@ app.use(function (req, res, next) {
 app.use(
     fileUpload()
   );
+app.options('*', (req, res) => {
+    res.send("Ok")
+});
 app.use('/api',router);
 
 app.listen(port, () => {
